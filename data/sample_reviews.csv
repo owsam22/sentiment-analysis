@@ -1,0 +1,31 @@
+text,sentiment,rating,category
+Absolutely love this product! Best purchase I've made this year.,positive,5,Product
+Excellent customer support! They resolved my issue within hours.,positive,5,Support
+Amazing quality and smooth delivery. Very happy with my purchase!,positive,5,Delivery
+Great value for the price. Would recommend to a friend.,positive,4,Value
+Outstanding build quality. Exceeded my expectations.,positive,5,Product
+Smooth checkout process and fast shipping. Very pleased!,positive,5,Delivery
+Couldn't be happier. Will definitely buy again.,positive,5,General
+The subscription plan offers great flexibility and features.,positive,4,Value
+Returns process was straightforward and hassle-free.,positive,4,Support
+Brilliant product, works perfectly right out of the box.,positive,5,Product
+Delivery took forever and the package was damaged on arrival.,negative,1,Delivery
+Terrible quality, broke after two days. Very disappointed.,negative,1,Product
+The app crashes frequently. Really frustrating to use.,negative,2,App
+Waited 3 weeks for delivery with no updates. Unacceptable.,negative,1,Delivery
+Support team was unhelpful and dismissive of my problem.,negative,1,Support
+Product looked completely different from the photos online.,negative,2,Product
+Instructions were unclear and assembly took several hours.,negative,2,Product
+Very disappointed overall. Would not recommend to anyone.,negative,1,General
+Worst purchase I have made. A total waste of money.,negative,1,General
+Item arrived broken with zero protective packaging.,negative,1,Delivery
+The item works as described. Nothing special but gets the job done.,neutral,3,Product
+Average experience. Not bad but could be improved.,neutral,3,General
+Decent product. Does what it says on the tin.,neutral,3,Product
+Normal delivery and normal experience overall.,neutral,3,General
+The product is okay. Nothing extraordinary about it.,neutral,3,Product
+It is fine for the price I suppose.,neutral,3,Value
+Works as expected. No complaints, no praise.,neutral,3,General
+Standard quality and standard packaging delivered on time.,neutral,3,Delivery
+Does the job. Not the best, not the worst either.,neutral,3,General
+Met my basic expectations. Nothing more, nothing less.,neutral,3,General
