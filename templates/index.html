@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentiment Analysis Dashboard</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="brand">SentimentIQ</div>
+  <span class="nav-tag">ML-Powered Feedback Analyzer</span>
+</nav>
+
+<div class="container">
+  <div class="metrics-grid">
+    <div class="metric-card"><div class="metric-label">Total Reviews</div><div class="metric-value" id="total">—</div></div>
+    <div class="metric-card positive"><div class="metric-label">Positive</div><div class="metric-value" id="pos-count">—</div></div>
+    <div class="metric-card negative"><div class="metric-label">Negative</div><div class="metric-value" id="neg-count">—</div></div>
+    <div class="metric-card neutral"><div class="metric-label">CSAT Score</div><div class="metric-value" id="csat">—</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Predict Sentiment</h3>
+      <textarea id="review-text" rows="4" placeholder="Paste a customer review here..."></textarea>
+      <button onclick="predict()" class="btn-primary">Analyze</button>
+      <div id="prediction-result" class="result-box hidden"></div>
+    </div>
+    <div class="card">
+      <h3>Sentiment Distribution</h3>
+      <canvas id="dist-chart" height="180"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Batch Analysis</h3>
+    <p class="hint">Enter one review per line, then click Analyze All.</p>
+    <textarea id="batch-input" rows="6" placeholder="Review 1&#10;Review 2&#10;Review 3"></textarea>
+    <button onclick="batchAnalyze()" class="btn-primary">Analyze All</button>
+    <div id="batch-results"></div>
+  </div>
+</div>
+
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>
