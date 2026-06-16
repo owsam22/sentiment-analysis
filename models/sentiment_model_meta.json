@@ -1,0 +1,8 @@
+{
+  "model_name": "Logistic Regression",
+  "classes": [
+    "negative",
+    "neutral",
+    "positive"
+  ]
+}
