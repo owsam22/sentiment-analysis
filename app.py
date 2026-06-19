@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from utils.preprocessor import preprocess_text
+from utils.preprocessor import preprocess_text, raw_tokens
 from utils.analyzer import SentimentAnalyzer
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ def predict():
     if not text:
         return jsonify({'error': 'No text provided'}), 400
 
-    tokens = preprocess_text(text)
+    tokens = raw_tokens(text)
     result = analyzer.predict(text, tokens)
     return jsonify(result)
 
@@ -26,7 +26,7 @@ def batch_predict():
     reviews = data.get('reviews', [])
     results = []
     for review in reviews:
-        tokens = preprocess_text(review)
+        tokens = raw_tokens(review)
         result = analyzer.predict(review, tokens)
         result['original_text'] = review
         results.append(result)
@@ -38,7 +38,7 @@ def insights():
     reviews = data.get('reviews', [])
     results = []
     for review in reviews:
-        tokens = preprocess_text(review)
+        tokens = raw_tokens(review)
         result = analyzer.predict(review, tokens)
         results.append(result)
     insights = analyzer.generate_insights(results)
